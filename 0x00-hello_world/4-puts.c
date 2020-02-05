@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main - function usoing puts to output assigned string of text
+ * main - function using puts to output assigned string of text
  * Return: 0
  */
 int main(void)

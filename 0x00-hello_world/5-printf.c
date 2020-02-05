@@ -13,7 +13,7 @@ int main(void)
 /* let's copy the string. */
 	strcpy(str, "with proper grammar, but the outcome is a piece of art,");
 /* print it to stdout */
-	printf("%s", str);
+	printf("%s\n", str);
 /* and return 0 */
 	return (0);
 }

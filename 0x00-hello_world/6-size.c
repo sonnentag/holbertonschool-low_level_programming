@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - function using prints the size of various types on the computer it is compiled and run on.
+ * main - prints size of various types on computer its compiled/run on
  * Return: 0
  */
-int main(int argc, char* argv)
+int main(void)
 	{
 /* let's print the assigned values */
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));

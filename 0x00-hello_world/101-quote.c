@@ -12,11 +12,11 @@
  * Return: 1
  */
 int main(void)
-	{
+{
 	int strl;
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	strl = sizeof(str);
+	strl = strlen(str);
 	write(2, str, strl);
 
 	return (1);

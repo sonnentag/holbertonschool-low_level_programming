@@ -1,20 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - print 0-16 in hex 
+ * main - print alphabet in reverse
  * Return: 0
  */
 int main(void)
 {
-	char n, c;
+	char c;
 
-	for (n = '0'; n <= '9'; n++)
+	for (c = 'z'; c >= 'a'; --c)
 	{
-		putchar (n);
-	}
-	for (c = 'a'; c <= 'f'; c++)
-	{
-		putchar(c);
+		putchar (c);
 	}
 	putchar ('\n');
 

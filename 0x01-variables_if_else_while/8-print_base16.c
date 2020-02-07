@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print 0-16 in hex 
+ * main - print 0-16 in hex
  * Return: 0
  */
 int main(void)

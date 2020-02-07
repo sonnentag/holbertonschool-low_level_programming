@@ -14,7 +14,11 @@ int main(void)
 		{
 			putchar (n);
 			putchar (x);
-			if (n <= 57 && x < 57)
+			if (n == 57 && x == 57)
+			{
+				break;
+			}
+			else
 			{
 				putchar (',');
 				putchar (' ');

@@ -12,11 +12,8 @@
  */
 int main(void)
 {
-	int strl;
-	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	strl = strlen(str);
-	write(2, str, strl);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+		strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"));
 
 	return (1);
 }

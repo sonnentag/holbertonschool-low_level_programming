@@ -5,7 +5,7 @@
  *
  * Return: 0
  */
-int main(void)
+void print_most_numbers(void)
 {
 	int n;
 
@@ -17,6 +17,4 @@ int main(void)
 		}
 	}
 	_putchar('\n');
-
-	return (0);
 }

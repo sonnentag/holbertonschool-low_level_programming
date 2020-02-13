@@ -1,9 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - use _putchar function to write 0-9 while skipping 2 and 4
- *
- * Return: 0
+ * print_most_numbers - _putchar 0-9 while skipping 2 and 4
  */
 void print_most_numbers(void)
 {

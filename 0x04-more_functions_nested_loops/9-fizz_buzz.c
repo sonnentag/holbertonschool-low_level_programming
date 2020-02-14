@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 /**
  * main - print 0-100 with s/3||5/fizz||bang/g
@@ -34,7 +32,10 @@ int main(void)
 		{
 			printf("%d", n);
 		}
+ if (n < max)
+{
 		putchar(32);
+}
 		n++;
 		y = 0;
 	}

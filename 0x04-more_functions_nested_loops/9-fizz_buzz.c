@@ -12,7 +12,7 @@ int main(void)
 	int y = 0;
 	int n = 1;
 
-	while (n < max)
+	while (n <= max)
 	{
 		if (n % 3 == 0)
 		{

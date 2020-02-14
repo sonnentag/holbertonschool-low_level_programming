@@ -32,10 +32,10 @@ int main(void)
 		{
 			printf("%d", n);
 		}
- if (n < max)
-{
-		putchar(32);
-}
+		if (n < max)
+		{
+			putchar(32);
+		}
 		n++;
 		y = 0;
 	}

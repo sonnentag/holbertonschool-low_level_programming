@@ -4,12 +4,11 @@
  *
  *
  */
-char *_str_cpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 
 	int x = 0;
         int length = 0;
-	char * ret = &dest;
         while (src[length] != '\0')
         {
                 length++;
@@ -17,7 +16,8 @@ char *_str_cpy(char *dest, char *src)
         while (x <= length)
 	{
 		dest[x] = src[x];
+		x++;
 	}
 
-return (ret);
+return (dest);
 }

@@ -8,16 +8,13 @@
  */
 void print_array(int *a, int n)
 {
-	int x = 1;
+	int x = 0;
 
-	if (a != NULL)
+	while (n > (x + 1))
 	{
-		printf("%d", a[0]);
-		while (x < n)
-		{
-			printf(", %d", a[x]);
-			x++;
-		}
+		printf("%d, ", a[x]);
+		x++;
 	}
+	printf("%d", a[x]);
 	printf("\n");
 }

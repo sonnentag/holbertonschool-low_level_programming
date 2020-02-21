@@ -17,13 +17,9 @@ char *cap_string(char *str)
 			if ((str[i] >= 'a' && str[i] <= 'z'))
 				str[i] -= 32;
 		}
-		if (str[i] == ' ' || str[i] == '.' || str[i] == 9 || str[i] == 10
-			|| str[i] == ',' || str[i] == ';' || str[i] == '!' ||
-			str[i] == '?' || str[i] == '"' || str[i] == '(' ||
-			str[i] == ')' || str[i] == '{' || str[i] == '}')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			++i;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (str[i - 1] == ' ' || str[i - 1] == '.' || str[i - 1] == '\n' || str[i - 1] == '\t' || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}')
 			{
 				str[i] -= 32;
 			}

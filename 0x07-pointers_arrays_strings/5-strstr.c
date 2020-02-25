@@ -12,17 +12,17 @@ char *_strstr(char *haystack, char *needle)
 	char *p;
 	char *q;
 
-	for(first = haystack; *first != '\0'; first++ ) 
+	for (first = haystack ; *first != '\0'; first++)
 	{
 		p = needle;
 		q = first;
-		while ( *p != '\0' && *q != '\0' && *p == *q ) 
+		while (*p != '\0' && *q != '\0' && *p == *q)
 		{
-			 p++;
-			 q++;
+			p++;
+			q++;
 		}
-		if( *p == '\0' )
-			return first;
+		if (*p == '\0')
+			return (first);
 	}
-	return (char)0;
+	return (0);
 }

@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strspn - get length of prefix substring
+ * _strpbrk - get length of prefix substring
  * @s: string
  * @accept: acceptable characters
  * Return: length
@@ -11,7 +11,7 @@ char *_strpbrk(char *s, char *accept)
 
 	for (; *s; s++)
 	{
-		if (_strchr (accept, *s) != 0)
+		if (_strchr(accept, *s) != 0)
 			return ((char *)s);
 	}
 	return (0);

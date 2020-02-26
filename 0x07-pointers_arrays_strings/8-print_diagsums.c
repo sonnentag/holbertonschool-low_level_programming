@@ -1,36 +1,25 @@
 #include "holberton.h"
+#include <stdio.h>
 
-
-
+/**
+ * print_diagsums - print sum of diagonals in matrix
+ * @a: values in matrix coordinates
+ * @size: size of matrix
+ */
 void print_diagsums(int *a, int size)
 {
-	int i, j, p, l = 0, r = 0;
+	int lr = 0, rl = 0;
+	int i, j, inc;
 
 	for (i = 0; i < size; i++)
 	{
-		p = (i * size) + i;
-		l += *(a + p);
+		inc = (i * size) + i;
+		lr += *(a + inc);
 	}
 	for (j = 0; j < size; j++)
 	{
-		p = (j * size) + (size - 1 - j);
-		r += *(a + p);
+		inc = (j * size) + (size - 1 - j);
+		rl += *(a + inc);
 	}
-	printf("%i, %i\n", l, r);
-}
-/**
- *
- *
- */
-void print_chessboard(char (*a)[8])
-{
-int x, n;
-for (x = 0; x < 8; x++)
-{
-for (n = 0; n < 8; n++)
-{
-_putchar(x[a][n]);
-}
-_putchar((char)10);
-}
+	printf("%i, %i\n", lr, rl);
 }

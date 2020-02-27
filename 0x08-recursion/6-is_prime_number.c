@@ -7,7 +7,7 @@
  */
 int is_prime_number(int n)
 {
-return (pnum(2, n));
+	return (pnum(2, n));
 }
 
 /**
@@ -24,7 +24,8 @@ int pnum(int i, int n)
 		return (1);
 	else if (n > i)
 		return (pnum(i + 1, n));
-	return (1);
+
+	return (0);
 }
 
 

@@ -5,3 +5,6 @@
 ### 2-strlen_recursion - return length of string using recursion
 ### 3-factorial - recursive function to return factor of given number
 ### 4-pow_recursion - return value of x raised to y
+### 5-sqrt_recursion - return square root of a number
+### 6-is_prime_number - determine if prime number is given
+### 7-is_palindrome - test if string is a palindrome

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "holberton.h"
 
 /**
  * main - add arguments
@@ -13,12 +15,17 @@ int main (int argc, char **argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+		if (*argv > 47 && *argv < 58)
+		{
+			{
+				add += atoi(argv[i]);
+			}
+		}
+		else
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
-		add += atoi(argv[i]);
 	}
 	printf("%d\n", add);
 

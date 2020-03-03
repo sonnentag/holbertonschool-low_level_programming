@@ -12,13 +12,13 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	int s3l, n1, n2;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	s3l = _strlen(s1) + _strlen(s2) + 1;
 	s3 = malloc(s3l);
-
-	if (!s1)
-		s1 = "";
-	if (!s2)
-		s2 = "";
 
 	if (s3 == NULL)
 		return (NULL);

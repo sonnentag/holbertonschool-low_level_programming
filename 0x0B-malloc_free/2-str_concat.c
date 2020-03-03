@@ -10,10 +10,16 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	int s3l, n1 = 0, n2 = 0;
+	int s3l, n1, n2;
 
 	s3l = _strlen(s1) + _strlen(s2) + 1;
 	s3 = malloc(s3l);
+
+	if (s1 == 0)
+		s1 = "";
+	if (s2 == 0)
+		s2 = "";
+
 	if (s3 == NULL)
 		return (NULL);
 

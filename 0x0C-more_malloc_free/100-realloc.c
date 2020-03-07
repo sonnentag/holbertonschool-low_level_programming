@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ * _realloc - reallocate memory
+ * @ptr: old pointer
+ * @old_size: old pointer size
+ * @new_size: new pointer size
+ * Return: new mem address, null on failure or 0 size, old ptr if no change
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {

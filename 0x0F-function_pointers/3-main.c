@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	i1 = atoi(argv[1]);
 	i2 = atoi(argv[3]);
 
-	if (i2 == 0 && (*argv[3] == (char)37 || *argv[3] == (char)47))
+	if (i2 == 0 && (*argv[2] == (char)37 || *argv[2] == (char)47))
 	{
 		printf("Error\n");
 		exit(100);

@@ -17,11 +17,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	if (!get_op_func(argv[2]))
-	{
-		printf("Error\n");
-		exit(98);
-	}
 
 	i1 = atoi(argv[1]);
 	i2 = atoi(argv[3]);

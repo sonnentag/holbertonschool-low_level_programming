@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "variadic_functions.h"
 
@@ -41,41 +42,41 @@ void print_all(const char * const format, ...)
 }
 
 /**
-  * p_char - prints characters
-  * @c: character to print
+  * op_c - prints characters
+  * @val: character to print
   */
-void op_c(va_list val)
+void op_c(va_list arg)
 {
-	printf("%c", va_arg(c, int));
+	printf("%c", va_arg(arg, int));
 }
 
 /**
-  * p_int - prints integers
+  * op_i - prints integers
   * @i: integer to print
   */
-void op_i(va_list val)
+void op_i(va_list arg)
 {
-	printf("%d", va_arg(i, int));
+	printf("%d", va_arg(arg, int));
 }
 
 /**
-  * p_float - prints floats
+  * op_f - prints floats
   * @f: float to print
   */
-void op_f(va_list val)
+void op_f(va_list arg)
 {
-	printf("%f", va_arg(f, double));
+	printf("%f", va_arg(arg, double));
 }
 
 /**
-  * p_string - prints strings
+  * op_s - prints strings
   * @s: string to print
   */
-void op_s(va_list val)
+void op_s(va_list arg)
 {
 	char *str;
 
-	str = va_arg(s, char *);
+	str = va_arg(arg, char *);
 	if (!str)
 		str = "(nil)";
 

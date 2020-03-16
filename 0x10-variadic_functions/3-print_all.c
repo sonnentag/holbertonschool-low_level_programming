@@ -13,7 +13,7 @@ void op_c(va_list val)
 
 /**
   * op_i - prints integers
-  * @i: integer to print
+  * @val: integer to print
   */
 void op_i(va_list val)
 {
@@ -22,7 +22,7 @@ void op_i(va_list val)
 
 /**
   * op_f - prints floats
-  * @f: float to print
+  * @val: float to print
   */
 void op_f(va_list val)
 {
@@ -31,11 +31,12 @@ void op_f(va_list val)
 
 /**
   * op_s - prints strings
-  * @s: string to print
+  * @val: string to print
   */
 void op_s(va_list val)
 {
 	char *str = va_arg(val, char *);
+
 	if (!str)
 		str = "(nil)";
 	printf("%s", str);
@@ -50,6 +51,7 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0, j;
 	char *sep = "";
 	va_list val;
+
 	va_ops ops[] = {
 		{"c", op_c},
 		{"i", op_i},

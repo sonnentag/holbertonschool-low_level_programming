@@ -1,17 +1,17 @@
 section .data
-	msg db "Hello, Holberton",10
+	msg db "Hello, Holberton",0x0A
 	len equ $-msg
 
 section .text
 	global main
 
 main:
-	mov eax,4
-	mov ebx,1
-	mov ecx,msg
 	mov edx,len
+	mov ecx,msg
+	mov ebx,1
+	mov eax,4
 	int 0x80
 
+	mov ebx,0
 	mov eax,1
 	int 0x80
-

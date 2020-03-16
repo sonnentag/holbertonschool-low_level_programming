@@ -1,5 +1,5 @@
 section .data
-	msg db "Hello, Holberton",0,10,13
+	msg db "Hello, Holberton",10
 	len equ $-msg
 
 section .text
@@ -13,6 +13,5 @@ main:
 	int 0x80
 
 	mov eax,1
-	mov ebx,0
-	int 80h
+	int 0x80
 

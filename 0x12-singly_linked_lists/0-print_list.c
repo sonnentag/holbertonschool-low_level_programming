@@ -1,13 +1,11 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
- *print_list- print the list in a struct
+ * print_list - print the list in a struct
  *
- *@h: pointer to head of list
- *Return:zero
+ * @h: pointer to head of list
+ * Return: zero
  */
 size_t print_list(const list_t *h)
 {

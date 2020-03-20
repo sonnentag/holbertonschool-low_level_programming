@@ -4,7 +4,6 @@
 /**
  * free_list - free a linked list
  * @head: beginning address
- * Return
  */
 void free_list(list_t *head)
 {

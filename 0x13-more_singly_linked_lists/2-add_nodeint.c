@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * add_node - add a new node at the beginning of a list
+ * add_nodeint - add a new node at the beginning of a list
  * @head: beginning address
- * @str: provided string
- * Return: address pf new node, or NULL on failure
+ * @n: provided int
+ * Return: address of new node, or NULL on failure
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {

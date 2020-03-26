@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * binary_to_uint - converts a binary number to unsigned int
@@ -13,17 +12,17 @@ unsigned int binary_to_uint(const char *b)
 	int c = 0, d = 0;
 	unsigned int r = 0;
 
-	if (b)
+	if (!b)
+		return (0);
+
+	while (b[c])
 	{
-		while (c < l)
-		{
-			d = b[c] - 48;
-			if (d != 0 && d != 1)
-				return (0);
-			r += d * p;
-			p = p / 2;
-			c++;
-		}
+		d = b[c] - 48;
+		if (d != 0 && d != 1)
+			return (0);
+		r += d * p;
+		p = p / 2;
+		c++;
 	}
 
 	return (r);

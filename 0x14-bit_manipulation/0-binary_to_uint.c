@@ -35,7 +35,7 @@ unsigned int binary_to_uint(const char *b)
  * @s: provided value in array
  * Return: length of array
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int c = 0;
 

@@ -56,7 +56,7 @@ int _strlen(char *s)
 int _pow_rec(int x, int y)
 {
 	int n;
-	
+
 	if (x == 0)
 		return (0);
 	if (y < 0)

@@ -6,5 +6,6 @@ int _strlen(const char *s);
 int _pow_rec(int x, int y);
 
 void print_binary(unsigned long int n);
+int _putchar(char c);
 
 #endif

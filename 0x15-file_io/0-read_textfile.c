@@ -6,9 +6,10 @@
 #include "holberton.h"
 
 /**
- * youtask.c -
- *
- * Return:
+ * read_textfile - read from text file and write to stdout
+ * @filename: file to read from
+ * @letters: number of characters to read
+ * Return: number of chars read, NULL if no fd or else 0 on failure
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -35,5 +36,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fd);
 
-	return (c);	
+	return (c);
 }

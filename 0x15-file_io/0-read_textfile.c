@@ -1,8 +1,4 @@
 #include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 #include "holberton.h"
 
 /**
@@ -28,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	c = read(fd, buf, letters);
-	ret = write(1, buf, c);
+	ret = write(STDOUT_FILENO, buf, c);
 	free(buf);
 
 	if (c == -1 || ret == -1 || c != ret)

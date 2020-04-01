@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int s, t, r;
-	char buf[1024];
+	char buf[BUFSIZ >> 3];
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (t == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	while ((r = read(s, buf, 1024)))
+	while ((r = read(s, buf, BUFSIZ >> 3)))
 	{
 		if (r == -1)
 			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);

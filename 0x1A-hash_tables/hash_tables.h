@@ -1,8 +1,6 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H 
 
-#include "1-djb2.c"
-
 /**
  * struct hash_node_s - Node of a hash table
  *

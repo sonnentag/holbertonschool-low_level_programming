@@ -1,0 +1,7 @@
+# Makefiles are Fun!
+
+CC = gcc
+SRC = main.c holberton.c
+
+all: ${SRC}
+	${CC} -o holberton ${SRC}

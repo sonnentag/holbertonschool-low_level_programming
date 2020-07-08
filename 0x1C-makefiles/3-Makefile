@@ -1,0 +1,21 @@
+# Makefiles are Fun!
+
+CC = gcc
+SRC = main.c holberton.c 
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+RM = rm
+
+all: $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
+
+clean:
+	$(RM) -f *~ *.swp $(NAME)
+
+oclean:
+	$(RM) -f *.o
+
+fclean:
+	$(RM) -f *.o *~ *.swp $(NAME)
+
+re: oclean all

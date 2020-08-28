@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 #include "search_algos.h"
 
 
@@ -20,18 +21,19 @@ int binary_search(int *array, size_t size, int value)
 	{
 		l = 0;
 		r = (int)size - 1;
+		m = floor((l + r) / 2);
 
 		while (l <= r)
 		{
-			m = (l + r) / 2;
 			print_array(array, l, r);
 
 			if (array[m] < value)
 				l = m + 1;
 			else if (array[m] > value)
-				r = m - l;
-			else if (m == value)
+				r = m - 1;
+			else
 				return (m);
+			m = floor((l + r) / 2);
 		}
 	}
 
@@ -47,6 +49,8 @@ int binary_search(int *array, size_t size, int value)
 void print_array(int *array, int l, int r)
 {
 	int loop;
+
+	printf("Searching in array: ");
 
 	for (loop = l; loop <= r; loop++)
 	{

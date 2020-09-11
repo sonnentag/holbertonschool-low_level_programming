@@ -21,11 +21,11 @@ int binary_search(int *array, size_t size, int value)
 	{
 		l = 0;
 		r = (int)size - 1;
-		m = floor((l + r) / 2);
 
 		while (l <= r)
 		{
 			print_array(array, l, r);
+			m = ((l + r) / 2);
 
 			if (array[m] < value)
 				l = m + 1;
@@ -33,7 +33,6 @@ int binary_search(int *array, size_t size, int value)
 				r = m - 1;
 			else
 				return (m);
-			m = floor((l + r) / 2);
 		}
 	}
 
